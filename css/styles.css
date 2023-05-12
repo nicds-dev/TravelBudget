@@ -1,0 +1,68 @@
+body {
+    background-color: #F1FDFF;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.header-nav {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+    background-color: #FEFEFE;
+    box-shadow: 0px 10px 20px #ababab29;
+}
+.header-nav .logo {
+    padding: 17px 54px 17px 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 4rem;
+}
+.header-nav .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 4rem;
+}
+.header-nav .navbar .links {
+    display: flex;
+    gap: 4rem;
+}
+.header-nav .navbar .links a {
+    color: #222;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.header-nav .navbar .links a:hover {
+    color: #7d7d7d;
+    transition: .1s ease-in-out;
+}
+.travel-page {
+    display: grid;
+    margin-top: 5rem;
+    text-align: center;
+    place-items: center;
+}
+.travel-page h1{
+    font-size: 1.9rem;
+}
+.form-card {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .4), -5px -5px 15px rgba(255, 255, 255, .4);
+    padding: 20px;
+    width: 100vh;
+    height: 50vh;
+}
+.form-travel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: start;
+}
