@@ -1,8 +1,11 @@
+p {
+    margin-top: 1rem !important;
+}
 .header-nav {
     padding-top: 7px;
     padding-bottom: 7px;
     display: flex;
-    background-color: #FEFEFE;
+    background-color: #4E95D2;
     box-shadow: 0px 10px 20px #ababab29;
 }
 .header-nav a {
@@ -14,6 +17,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 4rem;
+    color: white;
 }
 .header-nav .navbar {
     width: 100%;
@@ -27,15 +31,19 @@
     gap: 4rem;
 }
 .header-nav .navbar .links a {
-    color: #222;
+    color: white;
     font-weight: bolder;
     font-size: 1.2rem;
 }
 .header-nav .navbar .links a:hover {
-    color: #7d7d7d;
+    color: lightgray;
     transition: .1s ease-in-out;
 }
 .no-box-shadow {
     box-shadow: none !important;
     background-color: #a4a4a412 !important;
+}
+.grid-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
 }
