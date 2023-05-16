@@ -3,6 +3,7 @@ const form = document.getElementById('travelForm');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
+    const inputs = form.querySelectorAll('input');
     const formData = new FormData(event.target);
 
     const destination = formData.get('destination');
@@ -14,6 +15,10 @@ form.addEventListener('submit', (event) => {
     console.log(destination, budget, accommodation, transport, food);
 
     calculateBudget(destination, budget, accommodation, transport, food);
+
+    for(let i = 0; i < inputs.length; i++) {
+        inputs[i].value = '';
+    }
 })
 
 const calculateBudget = (destination, budgetInitial, budgetAccommodation, budgetTransport, budgetFood) => {
